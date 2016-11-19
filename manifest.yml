@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: innoday
+  host: innoday
+  disk_quota: 1024M
+  services:
+  - Conversation-ig
+  - text-to-speech-service
+  - speech-to-text-service-standard
